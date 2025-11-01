@@ -61,5 +61,22 @@ Developed in **Visual Studio**, it makes use of **polymorphism**, **operator ove
 ### Windows 11 Unicode Fixes
 - **Card suits are displayed properly** despite known console rendering issues, ensuring smooth user experience across platforms.
 
+## Build & Run
+
+### Prerequisites
+- A C++17 compiler  
+  - **Windows:** MSVC (install Visual Studio “Desktop development with C++”)  
+  - **macOS:** Xcode Command Line Tools (`xcode-select --install`)  
+  - **Linux (Ubuntu/Debian):** `sudo apt-get update && sudo apt-get install -y build-essential`
+- **CMake** 3.15+ (recommended)
+
+### Cross-platform (CMake)
+```bash
+# from the repo root
+cmake -S . -B build
+cmake --build build --config Release
+build\Release\WarGame.exe
+```
+
 ## Author
 Developed by **Christian Dury**.
